@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07584903-8341-4c12-b9dd-0960751b0b13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/assets/icons/promo.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/animations.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/app.scss" afterDir="false" />
@@ -12,6 +10,7 @@
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/media.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/var.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/DefBreadcrumb.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/components/IconSpot.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/MainFooter.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/MainHeader.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/TestComponent.vue" afterDir="false" />
@@ -22,7 +21,6 @@
       <change afterPath="$PROJECT_DIR$/cli/plugins/antd-ui.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/plugins/vuelidate.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProjectTheSpace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjectTheSpace.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +29,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/api/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
@@ -49,17 +47,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cli/pages/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,6 +60,7 @@
     <findStrings>
       <find>Registered</find>
       <find>my-bre</find>
+      <find>key</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,7 +74,6 @@
         <option value="$PROJECT_DIR$/cli/.eslintrc.js" />
         <option value="$PROJECT_DIR$/cli/.editorconfig" />
         <option value="$PROJECT_DIR$/cli/pages/blog.vue" />
-        <option value="$PROJECT_DIR$/cli/pages/login.vue" />
         <option value="$PROJECT_DIR$/cli/pages/projects.vue" />
         <option value="$PROJECT_DIR$/cli/components/MyBreadcrumb.vue" />
         <option value="$PROJECT_DIR$/cli/components/DefBreadcrumb.vue" />
@@ -96,12 +84,15 @@
         <option value="$PROJECT_DIR$/cli/assets/scss/main.scss" />
         <option value="$PROJECT_DIR$/cli/components/MainFooter.vue" />
         <option value="$PROJECT_DIR$/cli/components/TestComponent.vue" />
-        <option value="$PROJECT_DIR$/cli/assets/icons/promo.svg" />
         <option value="$PROJECT_DIR$/cli/assets/icons/sprites/TheSpaceIcon-01/001-sun.svg" />
         <option value="$PROJECT_DIR$/cli/assets/icons/sprites/TheSpaceIcon-01/004-asteroid.svg" />
         <option value="$PROJECT_DIR$/cli/assets/icons/sprites/mainSprite.svg" />
-        <option value="$PROJECT_DIR$/cli/pages/index.vue" />
         <option value="$PROJECT_DIR$/cli/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/cli/pages/login.vue" />
+        <option value="$PROJECT_DIR$/cli/assets/icons/promo.svg" />
+        <option value="$PROJECT_DIR$/cli/components/IconSpot.vue" />
+        <option value="$PROJECT_DIR$/cli/pages/index.vue" />
       </list>
     </option>
   </component>
@@ -190,7 +181,7 @@
       <path value="$PROJECT_DIR$/api/vendor/dragonmantank/cron-expression" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-28" />
     <option name="y" value="-22" />
     <option name="width" value="1378" />
@@ -204,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,7 +211,26 @@
               <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
               <item name="cli" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
@@ -229,16 +238,11 @@
               <item name="cli" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,18 +283,18 @@
       <option name="presentableId" value="Default" />
       <updated>1555179419571</updated>
       <workItem from="1555179420905" duration="1935000" />
-      <workItem from="1555225485682" duration="13192000" />
+      <workItem from="1555225485682" duration="13694000" />
+      <workItem from="1555267942564" duration="6416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15127000" />
+    <option name="totallyTimeSpent" value="22045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25567323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -303,7 +307,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6717949" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -425,13 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/layouts/default.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cli/plugins/vuelidate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -439,13 +436,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/pages/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -469,9 +459,6 @@
           <caret line="24" column="13" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/assets/icons/promo.svg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cli/components/TestComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -509,17 +496,66 @@
     <entry file="file://$PROJECT_DIR$/cli/assets/icons/sprites/mainSprite.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="e#122#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/icons/promo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/cli/nuxt.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        <state relative-caret-position="1587">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/components/IconSpot.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1867">
+          <caret line="349" column="18" selection-start-line="349" selection-start-column="18" selection-end-line="349" selection-end-column="18" />
+          <folding>
+            <element signature="e#564#601#0" expanded="true" />
+            <element signature="e#1263#1304#0" expanded="true" />
+            <element signature="e#9279#9321#0" expanded="true" />
+            <element signature="e#9398#9442#0" expanded="true" />
+            <element signature="e#9519#9561#0" expanded="true" />
+            <element signature="e#10586#10630#0" expanded="true" />
+            <element signature="e#10207#10251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/pages/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="137" column="61" selection-start-line="137" selection-start-column="57" selection-end-line="137" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#a-icon#0;n#a-input#0;n#a-form-item#0;n#a-form#0;n#a-tab-pane#0;n#a-tabs#0;n#a-col#0;n#a-row#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a-icon#0;n#a-input#0;n#a-form-item#1;n#a-form#0;n#a-tab-pane#0;n#a-tabs#0;n#a-col#0;n#a-row#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a-icon#0;n#a-input#0;n#a-form-item#1;n#a-form#0;n#a-tab-pane#1;n#a-tabs#0;n#a-col#0;n#a-row#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a-icon#0;n#a-input#0;n#a-form-item#2;n#a-form#0;n#a-tab-pane#1;n#a-tabs#0;n#a-col#0;n#a-row#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cli/pages/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="112">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>

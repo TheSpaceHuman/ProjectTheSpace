@@ -1,9 +1,12 @@
 <template>
   <main class="content">
     <a-row type="flex" justify="center">
-      <a-col :span="12">
-        <a-tabs defaultActiveKey="1">
-          <a-tab-pane tab="Login" key="1">
+      <a-col :span="8">
+        <a-tabs default-active-key="1">
+          <a-tab-pane
+            key="1"
+            tab="Login"
+          >
             <a-form
               :form="loginForm"
               class="login-form"
@@ -11,8 +14,8 @@
             >
               <a-form-item>
                 <a-input
-                  placeholder="Username"
                   v-model="loginForm.name"
+                  placeholder="Username"
                 >
                   <a-icon
                     slot="prefix"
@@ -23,9 +26,9 @@
               </a-form-item>
               <a-form-item>
                 <a-input
+                  v-model="loginForm.password"
                   type="password"
                   placeholder="Password"
-                  v-model="loginForm.password"
                 >
                   <a-icon
                     slot="prefix"
@@ -38,14 +41,10 @@
                 <a-checkbox>
                   Remember me
                 </a-checkbox>
-                <a
-                  class="login-form-forgot"
-                  href="forgot-password"
-                >
-                  Forgot password
-                </a>
               </a-form-item>
-              <a-form-item>
+              <a-form-item
+                class="button--centered"
+              >
                 <a-button
                   type="primary"
                   html-type="submit"
@@ -56,7 +55,11 @@
               </a-form-item>
             </a-form>
           </a-tab-pane>
-          <a-tab-pane tab="Registration" key="2" forceRender>
+          <a-tab-pane
+            key="2"
+            tab="Registration"
+            force-render
+          >
             <a-form
               :form="registerForm"
               class="register-form"
@@ -64,8 +67,8 @@
             >
               <a-form-item>
                 <a-input
-                  placeholder="Username"
                   v-model="registerForm.name"
+                  placeholder="Username"
                 >
                   <a-icon
                     slot="prefix"
@@ -76,21 +79,21 @@
               </a-form-item>
               <a-form-item>
                 <a-input
-                  placeholder="Email"
                   v-model="registerForm.email"
+                  placeholder="Email"
                 >
                   <a-icon
                     slot="prefix"
-                    type="email"
+                    type="mail"
                     style="color: rgba(0,0,0,.25)"
                   />
                 </a-input>
               </a-form-item>
               <a-form-item>
                 <a-input
+                  v-model="registerForm.password"
                   type="password"
                   placeholder="Password"
-                  v-model="registerForm.password"
                 >
                   <a-icon
                     slot="prefix"
@@ -101,9 +104,9 @@
               </a-form-item>
               <a-form-item>
                 <a-input
+                  v-model="registerForm.repeatPassword"
                   type="password"
                   placeholder="Confirm password"
-                  v-model="registerForm.repeatPassword"
                 >
                   <a-icon
                     slot="prefix"
@@ -112,11 +115,13 @@
                   />
                 </a-input>
               </a-form-item>
-              <a-form-item>
+              <a-form-item
+                class="button--centered"
+              >
                 <a-button
                   type="primary"
                   html-type="submit"
-                  class="login-form-button"
+
                 >
                   Register me
                 </a-button>
@@ -183,13 +188,8 @@ export default {
 </script>
 
 <style scoped>
-.login-form {
+.button--centered {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  flex-direction: column;
-  width: 360px;
-  margin: 0 auto;
-}
+  justify-content: space-around;
+ }
 </style>
