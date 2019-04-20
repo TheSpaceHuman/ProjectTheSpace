@@ -44,7 +44,14 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['nuxt-svg-sprite-module', {
+      directory: '~/assets/icons/sprites',
+      options: {
+        // Configuration options:
+        // https://github.com/jkphl/svg-sprite#configuration-basics
+      }
+    }]
   ],
   /*
   ** Axios module configuration

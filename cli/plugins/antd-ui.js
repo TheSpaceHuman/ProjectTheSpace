@@ -11,7 +11,9 @@ import {
   Input,
   Select,
   Checkbox,
-  Tabs
+  Tabs,
+  Layout,
+  Card
 } from 'ant-design-vue'
 
 export default () => {
@@ -27,4 +29,6 @@ export default () => {
   Vue.use(Select)
   Vue.use(Tabs)
   Vue.use(Checkbox)
+  Vue.use(Layout)
+  Vue.use(Card)
 }

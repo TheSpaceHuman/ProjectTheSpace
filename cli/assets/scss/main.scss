@@ -3,4 +3,34 @@
   padding: 0;
   margin: 30px 50px;
 }
-
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  background: #f0f2f5;
+  padding: 24px 50px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+.header {
+  height: auto;
+  line-height: 1;
+  display: flex;
+}
+.logo {
+  width: 150px;
+}
+.ant-menu {
+  margin-left: auto;
+}
+.ant-layout-header {
+  background-color: $color-primary;
+}
+.ant-menu-item {
+  background-color: $color-primary;
+}
+.ant-menu-item-active {
+  background-color: $color-primary;
+}
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: $color-primary;
+}

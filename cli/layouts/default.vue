@@ -1,5 +1,6 @@
 <template>
   <div class="app-layout">
+    <!--  svg-sprite  -->
     <main-header />
     <nuxt />
     <main-footer />
@@ -7,8 +8,8 @@
 </template>
 
 <script>
-import MainHeader from '../components/MainHeader'
-import MainFooter from '../components/MainFooter'
+import MainHeader from '../components/blocks/MainHeader'
+import MainFooter from '../components/blocks/MainFooter'
 
 export default {
   components: {

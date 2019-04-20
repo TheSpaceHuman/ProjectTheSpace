@@ -12,7 +12,12 @@ const store = () => new Vuex.Store({
       { title: 'Projects', link: { name: 'projects' }, icon: 'project', key: '3' },
       { title: 'Login', link: { name: 'login' }, icon: 'login', key: '4' }
     ],
-    counter: 0
+    counter: 0,
+    cardsAdvantages: [
+      { title: 'HTML5', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, laudantium.' },
+      { title: 'CSS3', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, laudantium.' },
+      { title: 'JavaScript', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, laudantium.' }
+    ]
   },
   mutations: {
     increment(state) {
@@ -34,6 +39,9 @@ const store = () => new Vuex.Store({
   getters: {
     getMainLinks: (state) => {
       return state.mainNavItems
+    },
+    getCardsAdvantages: (state) => {
+      return state.cardsAdvantages
     }
   }
 })
