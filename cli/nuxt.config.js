@@ -28,6 +28,7 @@ export default {
   */
   css: [
     'ant-design-vue/dist/antd.css',
+    'element-ui/lib/theme-chalk/index.css',
     '@/assets/scss/app.scss'
   ],
 
@@ -35,7 +36,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/antd-ui'
+    '@/plugins/antd-ui.js',
+    { src: '@/plugins/element-ui', ssr: true }
   ],
 
   /*
