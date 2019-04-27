@@ -21,7 +21,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: 'red' },
 
   /*
   ** Global CSS
@@ -51,6 +51,23 @@ export default {
         // Configuration options:
         // https://github.com/jkphl/svg-sprite#configuration-basics
       }
+    }],
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'en',
+          iso: 'en-US',
+          file: 'EN.js'
+        },
+        {
+          code: 'ru',
+          iso: 'ru-RU',
+          file: 'RU.js'
+        }
+      ],
+      lazy: true,
+      langDir: 'lang/',
+      defaultLocale: 'ru'
     }]
   ],
   /*

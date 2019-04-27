@@ -4,6 +4,14 @@
       <a-row :gutter="5" class="promo">
         <a-col :sm="24" :md="16" class="promo__text">
           <h1>Project The Space</h1>
+          <h2>{{ $t("welcome") }}</h2>
+          <h3>{{ $t("cards.advantages.html") }}</h3>
+          <!--<nuxt-link :to="switchLocalePath('en')">
+            English
+          </nuxt-link>
+          <nuxt-link :to="switchLocalePath('ru')">
+            Russian
+          </nuxt-link>-->
           <p>Hello to my simple site visitors!</p>
           <p>My name is Artem, I'm a web developer.</p>
           <p>I like to implement good web projects.</p>
@@ -24,7 +32,7 @@
       <p>My work experience is over 3 years in this field.</p>
       <p>I have already seen a lot of projects and released them in production.</p>
     </svg-transition>
-    <par-card-advantages :items="cardItems"></par-card-advantages>
+    <par-card-advantages :items="cardItems" />
   </main>
 </template>
 
@@ -34,7 +42,6 @@ import SvgTransition from '../components/svg/SvgTransition'
 import ParCardAdvantages from '../components/partials/ParCardsAdvantages'
 
 export default {
-  name: 'PageHome',
   components: {
     SvgSpot,
     SvgTransition,
@@ -47,7 +54,8 @@ export default {
     cardItems() {
       return this.$store.getters.getCardsAdvantages
     }
-  }
+  },
+  methods: {}
 }
 </script>
 

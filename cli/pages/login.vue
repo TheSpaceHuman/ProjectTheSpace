@@ -132,7 +132,6 @@
 import { required, minLength, maxLength, email, sameAs } from 'vuelidate/lib/validators'
 
 export default {
-  name: 'PageHome',
   components: {},
   data() {
     return {

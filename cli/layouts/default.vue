@@ -1,6 +1,7 @@
 <template>
   <div class="app-layout">
     <!--  svg-sprite  -->
+    <nuxt-loading />
     <main-header />
     <nuxt />
     <main-footer />
@@ -10,9 +11,11 @@
 <script>
 import MainHeader from '../components/blocks/MainHeader'
 import MainFooter from '../components/blocks/MainFooter'
+import NuxtLoading from '../.nuxt/components/nuxt-loading'
 
 export default {
   components: {
+    NuxtLoading,
     MainHeader,
     MainFooter
   }

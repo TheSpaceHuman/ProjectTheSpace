@@ -10,7 +10,7 @@
         v-for="item in mainNavItems"
         :key="item.key"
       >
-        <nuxt-link :to="item.link">
+        <nuxt-link :to="localePath(item.link)">
           <a-icon :type="item.icon" />{{ item.title }}
         </nuxt-link>
       </a-menu-item>
