@@ -1,29 +1,15 @@
 <template>
   <main>
     <div class="content">
-      <a-row :gutter="5" class="promo">
-        <a-col :sm="24" :md="16" class="promo__text">
-          <h1>Project The Space</h1>
-          <h2>{{ $t("welcome") }}</h2>
-          <h3>{{ $t("cards.advantages.html") }}</h3>
-          <!--<nuxt-link :to="switchLocalePath('en')">
-            English
-          </nuxt-link>
-          <nuxt-link :to="switchLocalePath('ru')">
-            Russian
-          </nuxt-link>-->
-          <p>Hello to my simple site visitors!</p>
-          <p>My name is Artem, I'm a web developer.</p>
-          <p>I like to implement good web projects.</p>
-          <p>
-            If you need advice or assistance in the implementation of your project, I will be happy to help
-            <a-icon type="smile" />
-          </p>
-        </a-col>
-        <a-col :sm="24" :md="8">
+      <el-row type="flex" :gutter="5" class="promo">
+        <el-col :sm="24" :md="16" class="promo__text">
+          <h1>{{ $t("pages.index.promo.title") }}</h1>
+          <p>{{ $t("pages.index.promo.text") }}</p>
+        </el-col>
+        <el-col :sm="24" :md="8">
           <svg-spot svg-id="#icon-rocket-color-1" color="#1A2B63" />
-        </a-col>
-      </a-row>
+        </el-col>
+      </el-row>
     </div>
     <svg-transition color="#1A2B63">
       <template slot="title">
@@ -37,9 +23,9 @@
 </template>
 
 <script>
-import SvgSpot from '../components/svg/SvgSpot'
-import SvgTransition from '../components/svg/SvgTransition'
-import ParCardAdvantages from '../components/partials/ParCardsAdvantages'
+import SvgSpot from '../components/Figures/SvgSpot'
+import SvgTransition from '../components/Figures/SvgTransition'
+import ParCardAdvantages from '../components/UI/CardsAdvantages'
 
 export default {
   components: {

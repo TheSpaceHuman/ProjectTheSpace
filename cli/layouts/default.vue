@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import MainHeader from '../components/blocks/MainHeader'
-import MainFooter from '../components/blocks/MainFooter'
+import MainHeader from '../components/Navigation/TheHeader'
+import MainFooter from '../components/Navigation/TheFooter'
 import NuxtLoading from '../.nuxt/components/nuxt-loading'
 
 export default {

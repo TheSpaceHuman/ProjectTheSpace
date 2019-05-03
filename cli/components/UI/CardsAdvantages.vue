@@ -1,12 +1,12 @@
 <template>
   <section class="cards-advantages content">
-    <a-row :gutter="16">
-      <a-col v-for="(item, index) in items" :key="index" :span="8">
-        <a-card :title="item.title" :bordered="false">
+    <el-row type="flex" :gutter="16">
+      <el-col v-for="(item, index) in items" :key="index" :span="8">
+        <el-card :header="item.title">
           <p>{{ item.content }}</p>
-        </a-card>
-      </a-col>
-    </a-row>
+        </el-card>
+      </el-col>
+    </el-row>
   </section>
 </template>
 

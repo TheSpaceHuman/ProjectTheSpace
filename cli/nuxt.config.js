@@ -14,7 +14,8 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
 
@@ -27,16 +28,17 @@ export default {
   ** Global CSS
   */
   css: [
-    'ant-design-vue/dist/antd.css',
     'element-ui/lib/theme-chalk/index.css',
-    '@/assets/scss/app.scss'
+    '~assets/scss/app.scss'
   ],
-
+  // Custom Router
+  router: {
+    linkActiveClass: 'active'
+  },
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/antd-ui.js',
     { src: '@/plugins/element-ui', ssr: true }
   ],
 
