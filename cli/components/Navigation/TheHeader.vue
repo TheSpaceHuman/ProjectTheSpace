@@ -4,10 +4,17 @@
       :default-active="activeIndex"
       class="main-menu"
       mode="horizontal"
-      background-color="#545c64"
+      background-color="#2a272a"
       text-color="#fff"
-      active-text-color="#ffd04b"
+      active-text-color="#f9f871"
     >
+      <div class="main-header_logo">
+        <nuxt-link :to="localePath('index')" class="main-menu_link">
+          <svg class="main-header_logo_svg">
+            <use xlink:href="#icon-atom-3" />
+          </svg>
+        </nuxt-link>
+      </div>
       <template v-for="(item, index) in menuItems">
         <el-menu-item v-if="!item.children" :key="index" :index="item.key">
           <nuxt-link :to="localePath(item.link)" class="main-menu_link">
@@ -20,7 +27,7 @@
             <i class="material-icons">{{ item.icon }}</i>
             {{ item.title }}
           </template>
-          <el-menu-item v-for="(childItem, i) in item.children" :key="i" :index="childItem.key" >
+          <el-menu-item v-for="(childItem, i) in item.children" :key="i" :index="childItem.key">
             <nuxt-link :to="localePath(childItem.link)" class="main-submenu_link">
               {{ childItem.title }}
             </nuxt-link>
@@ -93,5 +100,17 @@ export default {
 }
 .main-submenu_link:hover {
   color: inherit;
+}
+.main-header_logo {
+  margin-right: auto;
+}
+.main-header_logo:hover .main-header_logo_svg {
+  fill: #f9f871;
+}
+.main-header_logo_svg {
+  fill: #fff;
+  display: block;
+  width: 30px;
+  height: 30px;
 }
 </style>

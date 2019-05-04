@@ -52,11 +52,11 @@ export default {
 .transition-svg-end_content {
   /*background-color: red;*/
   padding: 30px 0 100px;
-  color: #fff;
+  color: #000;
 }
 .transition-svg-end_content_title {
   font-size: 38px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
