@@ -1,12 +1,12 @@
 <template>
-  <el-header class="main-header">
+  <header id="header" class="header">
     <el-menu
       :default-active="activeIndex"
       class="main-menu"
       mode="horizontal"
       background-color="#2a272a"
       text-color="#fff"
-      active-text-color="#f9f871"
+      active-text-color="#3F51B5"
     >
       <div class="main-header_logo">
         <nuxt-link :to="localePath('index')" class="main-menu_link">
@@ -18,13 +18,17 @@
       <template v-for="(item, index) in menuItems">
         <el-menu-item v-if="!item.children" :key="index" :index="item.key">
           <nuxt-link :to="localePath(item.link)" class="main-menu_link">
-            <i class="material-icons">{{ item.icon }}</i>
+            <svg class="icon">
+              <use :xlink:href="'#icon-' + item.icon" />
+            </svg>
             {{ item.title }}
           </nuxt-link>
         </el-menu-item>
         <el-submenu v-if="item.children" :key="index" :index="item.key" class="main-menu_link">
           <template slot="title">
-            <i class="material-icons">{{ item.icon }}</i>
+            <svg class="icon">
+              <use :xlink:href="'#icon-' + item.icon" />
+            </svg>
             {{ item.title }}
           </template>
           <el-menu-item v-for="(childItem, i) in item.children" :key="i" :index="childItem.key">
@@ -35,7 +39,7 @@
         </el-submenu>
       </template>
     </el-menu>
-  </el-header>
+  </header>
 </template>
 
 <script>
@@ -67,6 +71,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/utils/vars.scss";
 .main-menu_link {
   display: block;
   text-decoration: none!important;
@@ -76,6 +81,18 @@ export default {
     padding-right: 5px;
     padding-left: 5px;
     color: inherit;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    fill: $light-color;
+    margin-right: 5px;
+  }
+}
+.main-menu_link.nuxt-link-exact-active,
+.main-menu_link.is-active {
+  .icon {
+    fill: $primary-color;
   }
 }
 .el-menu-item {
@@ -105,10 +122,10 @@ export default {
   margin-right: auto;
 }
 .main-header_logo:hover .main-header_logo_svg {
-  fill: #f9f871;
+  fill: $primary-color;
 }
 .main-header_logo_svg {
-  fill: #fff;
+  fill: $light-color;
   display: block;
   width: 30px;
   height: 30px;

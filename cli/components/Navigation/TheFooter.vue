@@ -1,7 +1,9 @@
 <template>
-  <footer class="footer">
-    <p>TheSpaceHuman ©2019</p>
-    <blockquote>Follow your dream!</blockquote>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <p>TheSpaceHuman ©2019</p>
+      <blockquote>Follow your dream!</blockquote>
+    </div>
   </footer>
 </template>
 
@@ -11,6 +13,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.footer {
+  text-align: center;
+}
 </style>

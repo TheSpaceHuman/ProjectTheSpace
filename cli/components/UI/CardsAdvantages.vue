@@ -1,7 +1,7 @@
 <template>
   <section class="cards-advantages content">
     <el-row type="flex" :gutter="16" style="flex-wrap: wrap;">
-      <el-col v-for="(item, index) in items" :key="index" :sm="24" :md="8">
+      <el-col v-for="(item, index) in items" :key="index" :sm="24" :md="8" style="margin-bottom: 15px;">
         <div class="el-card is-always-shadow">
           <div class="el-card__header">
             {{ item.title }}

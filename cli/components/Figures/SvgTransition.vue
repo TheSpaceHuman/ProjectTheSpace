@@ -7,12 +7,12 @@
     </div>
     <div class="transition-svg-end">
       <div class="transition-svg-end_content" :style="{ backgroundColor: color }">
-        <h2 class="transition-svg-end_content_title">
+        <h2 class="transition-svg-end_content_title" :style="{ color: colorText }">
           <slot name="title">
             Title
           </slot>
         </h2>
-        <div class="transition-svg-end_content_text">
+        <div class="transition-svg-end_content_text" :style="{ color: colorText }">
           <slot>Content</slot>
         </div>
       </div>
@@ -30,8 +30,12 @@ export default {
   name: 'SvgTransition',
   props: {
     color: {
-      type: [String, Number],
-      default: '#1890ff'
+      type: String,
+      default: '#000'
+    },
+    colorText: {
+      type: String,
+      default: '#fff'
     }
   },
   data() {
@@ -40,7 +44,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .wrapper-transition-svg {}
 .transition-svg-start {
   position: relative;
@@ -52,14 +56,14 @@ export default {
 .transition-svg-end_content {
   /*background-color: red;*/
   padding: 30px 0 100px;
-  color: #000;
+  /*color: #000;*/
 }
 .transition-svg-end_content_title {
   font-size: 38px;
-  color: #000;
+  /*color: #000;*/
   font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .transition-svg-end_content_text {
   font-size: 26px;

@@ -1,36 +1,111 @@
-.content {
-  flex: 0 0 auto;
+@import "utils/libs";
+@import "utils/reset";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+
+html {
+  font-family: $mainFont;
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $mainFont;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
   padding: 0;
-  margin: 30px 50px;
 }
-.footer {
-  margin-top: 60px;
-  text-align: center;
-  background: #f0f2f5;
-  padding: 24px 50px;
-  color: rgba(0, 0, 0, 0.65);
-  font-size: 14px;
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5s;
 }
-.header {
+a:hover, a:active {
+  color: $primary-color;
+}
+img {
+  width: 100%;
   height: auto;
-  line-height: 1;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section, .section {
+  position: relative;
+}
+
+.wrapper {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: $light-color;
 }
-.logo {
-  width: 150px;
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.ant-menu {
-  margin-left: auto;
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  max-width: $desktopWidth;
+  margin: 0 auto;
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: $tableWidth;
+  }
+  @media screen and (max-width: $tableWidth) {
+    max-width: $phoneWidth;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    max-width: $smPhoneWidth;
+  }
 }
-.ant-layout-header {
-  background-color: $color-primary;
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  fill: $dark-color;
 }
-.ant-menu-item {
-  background-color: $color-primary;
+p {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
-.ant-menu-item-active {
-  background-color: $color-primary;
-}
-.ant-menu-dark .ant-menu-item:hover {
-  background-color: $color-primary;
-}
+
+
+@import "./modules/header";
+@import "./modules/content";
+@import "./modules/footer";

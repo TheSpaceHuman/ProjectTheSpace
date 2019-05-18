@@ -1,0 +1,25 @@
+.el-tabs__item:hover {
+  color: $primary-color ; 
+}
+.el-tabs__item.is-active {
+  color: $primary-color ;
+}
+.el-tabs__active-bar {
+  background-color:  $primary-color ;
+}
+.promo {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.promo__text {
+  h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+  p {
+    font-size: 32px;
+    font-weight: 300;
+    max-width: 700px;
+  }
+}

@@ -14,8 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -29,17 +28,16 @@ export default {
   */
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    '~assets/scss/app.scss'
+    '~assets/scss/main.scss'
   ],
   // Custom Router
-  router: {
-    linkActiveClass: 'active'
-  },
+  router: {},
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '@/plugins/element-ui', ssr: true }
+    { src: '@/plugins/element-ui', ssr: true },
+    '@/plugins/base-components'
   ],
 
   /*
@@ -50,7 +48,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     ['nuxt-svg-sprite-module', {
-      directory: '~/assets/icons/sprites',
+      directory: '~/assets/icons',
       options: {
         // Configuration options:
         // https://github.com/jkphl/svg-sprite#configuration-basics
