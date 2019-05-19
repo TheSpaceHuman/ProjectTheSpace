@@ -14,14 +14,14 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#f9f871' },
+  loading: { color: '#3F51B5' },
 
   /*
   ** Global CSS
@@ -31,7 +31,10 @@ export default {
     '~assets/scss/main.scss'
   ],
   // Custom Router
-  router: {},
+  router: {
+    linkActiveClass: 'active-link',
+    linkExactActiveClass: 'exact-active-link'
+  },
   /*
   ** Plugins to load before mounting the App
   */

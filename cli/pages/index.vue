@@ -25,9 +25,9 @@
 </template>
 
 <script>
-import SvgSpot from '@/components/Figures/SvgSpot'
-import SvgTransition from '@/components/Figures/SvgTransition'
-import CardAdvantages from '@/components/UI/CardsAdvantages'
+import SvgSpot from '@/components/Figures/SvgSpot.vue'
+import SvgTransition from '@/components/Figures/SvgTransition.vue'
+import CardAdvantages from '@/components/Cards/CardsAdvantages.vue'
 
 export default {
   components: {

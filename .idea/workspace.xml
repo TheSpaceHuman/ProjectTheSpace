@@ -26,16 +26,16 @@
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/utils/mixins.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/utils/reset.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/utils/vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/components/Cards/CardsAdvantages.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Figures/SvgSpot.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Figures/SvgTransition.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Navigation/TheAside.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Navigation/TheFooter.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/components/Partials/TheBreadcrumb.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/components/Partials/TheCounter.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/UI/BaseButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli/components/UI/CardsAdvantages.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli/components/UI/TheBreadcrumb.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli/components/UI/TheCounter.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/lang/EN.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/lang/RU.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/layouts/README.md" afterDir="false" />
@@ -58,10 +58,10 @@
       <change afterPath="$PROJECT_DIR$/cli/plugins/vuelidate.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/static/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/static/favicon.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/static/icon.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/store/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cli/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,30 +73,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cli/assets/scss/modules/content.scss">
+        <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/vars.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="368">
+              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cli/components/Figures/SvgTransition.vue">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cli/components/Figures/SvgSpot.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            <state relative-caret-position="338">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
-                <element signature="n#style#0;n#path#1;n#g#0;n#svg#0;n#figure#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#header#0;n#template#0;n#!!top" />
+                <element signature="n#el-menu#0;n#header#0;n#template#0;n#!!top" />
+                <element signature="n#template#0;n#el-menu#0;n#header#0;n#template#0;n#!!top" />
+                <element signature="n#script#0;n#!!top" />
+                <element signature="e#2621#2895#0" />
+                <element signature="e#3049#3066#0" />
               </folding>
             </state>
           </provider>
@@ -105,24 +101,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cli/pages/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="702">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding>
                 <element signature="n#svg-transition#0;n#main#0;n#template#0;n#!!top" />
+                <element signature="e#813#863#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cli/components/UI/CardsAdvantages.vue">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cli/nuxt.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-              <folding>
-                <element signature="n#style#0;n#el-row#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-col#0;n#el-row#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -146,6 +139,10 @@
       <find>content</find>
       <find>promo__text</find>
       <find>container</find>
+      <find>main-menu</find>
+      <find>exact-active-link</find>
+      <find>main-submenu_link</find>
+      <find>is-active</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,11 +170,8 @@
         <option value="$PROJECT_DIR$/cli/components/UI/BaseButton.vue" />
         <option value="$PROJECT_DIR$/cli/pages/projects/index.vue" />
         <option value="$PROJECT_DIR$/cli/components/Navigation/TheFooter.vue" />
-        <option value="$PROJECT_DIR$/cli/nuxt.config.js" />
         <option value="$PROJECT_DIR$/cli/lang/RU.js" />
         <option value="$PROJECT_DIR$/cli/pages/login/index.vue" />
-        <option value="$PROJECT_DIR$/cli/assets/scss/utils/vars.scss" />
-        <option value="$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue" />
         <option value="$PROJECT_DIR$/cli/pages/blog/index.vue" />
         <option value="$PROJECT_DIR$/cli/pages/projects/chat/index.vue" />
         <option value="$PROJECT_DIR$/cli/pages/projects/password-manager/index.vue" />
@@ -186,12 +180,15 @@
         <option value="$PROJECT_DIR$/cli/assets/scss/main.scss" />
         <option value="$PROJECT_DIR$/cli/assets/scss/modules/content.scss" />
         <option value="$PROJECT_DIR$/cli/components/Figures/SvgTransition.vue" />
-        <option value="$PROJECT_DIR$/cli/pages/index.vue" />
         <option value="$PROJECT_DIR$/cli/components/UI/CardsAdvantages.vue" />
+        <option value="$PROJECT_DIR$/cli/pages/index.vue" />
+        <option value="$PROJECT_DIR$/cli/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/cli/assets/scss/utils/vars.scss" />
+        <option value="$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-52" />
     <option name="y" value="-18" />
     <option name="width" value="1378" />
@@ -218,72 +215,6 @@
               <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
               <item name="cli" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -294,22 +225,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cli/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\static" />
+      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\assets\icons\sprites" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\Cards" />
+      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\Partials" />
       <recent name="C:\Code\GitHub\ProjectTheSpace\cli\assets\icons" />
       <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\Navigation" />
       <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\Figures" />
-      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\UI" />
-      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\pages\projects" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\assets\icons\sprites" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -344,17 +276,17 @@
       <workItem from="1557864049583" duration="3543000" />
       <workItem from="1557904319211" duration="99000" />
       <workItem from="1558193775807" duration="14623000" />
+      <workItem from="1558284490238" duration="9303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51817000" />
+    <option name="totallyTimeSpent" value="61120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21205357" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21205357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -377,14 +309,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cli/node_modules/material-icons/iconfont/material-icons.css" />
-    <entry file="file://$PROJECT_DIR$/api/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cli/assets/fonts/Icon Pack Vol. 1/ICON PACK VOL. 1 by Petras Nargela.psd" />
     <entry file="file://$PROJECT_DIR$/cli/assets/icons/svg/promo.svg" />
     <entry file="file://$PROJECT_DIR$/cli/assets/icons/atom-3.svg">
@@ -539,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cli/lang/RU.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -557,20 +474,6 @@
             <element signature="e#1673#1814#0" />
             <element signature="e#1837#1978#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/vars.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -625,45 +528,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cli/assets/scss/modules/content.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="364">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cli/components/Figures/SvgTransition.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="260">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cli/components/Figures/SvgSpot.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#path#1;n#g#0;n#svg#0;n#figure#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/pages/index.vue">
+    <entry file="file://$PROJECT_DIR$/cli/components/Cards/CardsAdvantages.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="208">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
           <folding>
-            <element signature="n#svg-transition#0;n#main#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#el-row#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-col#0;n#el-row#0;n#section#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/components/UI/CardsAdvantages.vue">
+    <entry file="file://$PROJECT_DIR$/cli/static/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/.nuxt/components/nuxt-link.client.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/nuxt.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        <state relative-caret-position="286">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
           <folding>
-            <element signature="n#style#0;n#el-row#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-col#0;n#el-row#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg-transition#0;n#main#0;n#template#0;n#!!top" />
+            <element signature="e#813#863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#template#0;n#!!top" />
+            <element signature="n#el-menu#0;n#header#0;n#template#0;n#!!top" />
+            <element signature="n#template#0;n#el-menu#0;n#header#0;n#template#0;n#!!top" />
+            <element signature="n#script#0;n#!!top" />
+            <element signature="e#2621#2895#0" />
+            <element signature="e#3049#3066#0" />
           </folding>
         </state>
       </provider>
