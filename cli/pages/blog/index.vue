@@ -7,7 +7,7 @@
           <p>{{ $t("pages.blog.promo.text") }}</p>
         </el-col>
         <el-col :sm="24" :md="8">
-          <svg-spot svg-id="#icon-question_answer" color="#3F51B5" />
+          <svg-spot svg-id="#icon-list_alt" color="#3F51B5" />
         </el-col>
       </el-row>
     </div>

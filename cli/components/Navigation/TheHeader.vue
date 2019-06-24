@@ -14,21 +14,27 @@
       text-color="#fff"
       active-text-color="#3F51B5"
     >
-      <template v-for="(item, index) in menuItems">
-        <nuxt-link tag="el-menu-item" :to="localePath(item.link)" class="main-menu_link" v-if="!item.children" :key="index">
+      <template v-for="item in menuItems">
+        <nuxt-link
+          v-if="!item.children"
+          :key="item.key"
+          :index="item.key"
+          tag="el-menu-item"
+          :to="localePath(item.link)"
+          class="main-menu_link">
           <svg class="icon">
             <use :xlink:href="'#icon-' + item.icon" />
           </svg>
           {{ item.title }}
         </nuxt-link>
-        <el-submenu v-if="item.children" :key="index" :index="item.key" class="main-menu_link">
+        <el-submenu v-if="item.children" :key="item.key" :index="item.key" class="main-menu_link">
           <template slot="title">
             <svg class="icon">
               <use :xlink:href="'#icon-' + item.icon" />
             </svg>
             {{ item.title }}
           </template>
-          <el-menu-item v-for="(childItem, i) in item.children" :key="i" :index="childItem.key">
+          <el-menu-item v-for="childItem in item.children" :key="childItem.key" :index="childItem.key">
             <nuxt-link :to="localePath(childItem.link)" class="main-submenu_link">
               {{ childItem.title }}
             </nuxt-link>
@@ -36,25 +42,6 @@
         </el-submenu>
       </template>
     </el-menu>
-    <!--<div class="header__logo">
-      <nuxt-link :to="localePath('index')" class="header__logo_link">
-        <svg class="header__logo_icon">
-          <use xlink:href="#icon-atom-3" />
-        </svg>
-      </nuxt-link>
-    </div>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <nuxt-link tag="li" :to="localePath(item.link)" class="header__menu-item" v-for="(item, index) in menuItems" :key="index">
-          {{ item.title }}
-          <div class="header__submenu" v-if="item.children">
-            <nuxt-link :to="localePath(childItem.link)" class="header__submenu-item" v-for="(childItem, index) in item.children" :key="index">
-              {{ childItem.title }}
-            </nuxt-link>
-          </div>
-        </nuxt-link>
-      </ul>
-    </nav>-->
   </header>
 </template>
 

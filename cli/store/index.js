@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import axios from '@nuxtjs/axios'
 
 Vue.use(Vuex)
 
@@ -34,6 +35,10 @@ const store = () => new Vuex.Store({
     },
     decrement({ commit }) {
       commit('decrement')
+    },
+    registred({ commit }) {
+      const apiUrl = 'http://project-the-space-nuxt.web/api'
+      axios.post(apiUrl, {})
     }
   },
   getters: {

@@ -1,6 +1,16 @@
 <template>
   <main id="main" class="main">
     <div class="container">
+      <el-alert
+        v-if="registerForm.success"
+        title="Пользователь создан!"
+        type="success"
+      />
+      <el-alert
+        v-if="registerForm.failed"
+        title="Произошла ошибка, попробуйте снова"
+        type="error"
+      />
       <el-row justify="space-around" align="center" type="flex">
         <el-col span="12">
           <el-tabs v-model="activeTab">
@@ -31,7 +41,7 @@
                 <el-form-item :label="$t('forms.register.inputConfirmPassword.title')">
                   <el-input v-model="registerForm.repeatPassword" :placeholder="$t('forms.register.inputConfirmPassword.placeholder')" type="password" />
                 </el-form-item>
-                <el-button type="primary">
+                <el-button type="primary" @click="submitRegister">
                   {{ $t('forms.register.title') }}
                 </el-button>
               </el-form>
@@ -58,12 +68,32 @@ export default {
         name: null,
         email: null,
         password: null,
-        repeatPassword: null
+        repeatPassword: null,
+        success: false,
+        failed: false
       },
       activeTab: 'login'
     }
   },
-  methods: {},
+  methods: {
+    submitLogin() {},
+    submitRegister() {
+      const apiPath = 'http://project-the-space-nuxt.web/api/register'
+      this.$axios.$post(apiPath, {
+        name: this.registerForm.name,
+        email: this.registerForm.email,
+        password: this.registerForm.password
+      }).then((res) => {
+        console.log(res)
+        if (res.status === 200 || res.status === 201) {
+          this.registerForm.success = true
+        }
+      }).catch((e) => {
+        console.error(e)
+        this.registerForm.failed = true
+      })
+    }
+  },
   validations: {
     loginForm: {
       name: {
