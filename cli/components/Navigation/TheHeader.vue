@@ -15,18 +15,21 @@
       active-text-color="#3F51B5"
     >
       <template v-for="item in menuItems">
-        <nuxt-link
+        <el-menu-item
           v-if="!item.children"
           :key="item.key"
           :index="item.key"
-          tag="el-menu-item"
-          :to="localePath(item.link)"
-          class="main-menu_link">
-          <svg class="icon">
-            <use :xlink:href="'#icon-' + item.icon" />
-          </svg>
-          {{ item.title }}
-        </nuxt-link>
+        >
+          <nuxt-link
+            :to="localePath(item.link)"
+            class="main-menu_link"
+          >
+            <svg class="icon">
+              <use :xlink:href="'#icon-' + item.icon" />
+            </svg>
+            {{ item.title }}
+          </nuxt-link>
+        </el-menu-item>
         <el-submenu v-if="item.children" :key="item.key" :index="item.key" class="main-menu_link">
           <template slot="title">
             <svg class="icon">

@@ -1,47 +1,34 @@
 <template>
   <main id="main" class="main">
     <div class="container">
-      <el-alert
-        v-if="registerForm.success"
-        title="Пользователь создан!"
-        type="success"
-      />
-      <el-alert
-        v-if="registerForm.failed"
-        title="Произошла ошибка, попробуйте снова"
-        type="error"
-      />
       <el-row justify="space-around" align="center" type="flex">
-        <el-col span="12">
+        <el-col :span="12">
           <el-tabs v-model="activeTab">
             <el-tab-pane :label="$t('forms.login.title')" name="login">
-              <el-form :model="loginForm">
-                <el-form-item :label="$t('forms.login.inputName.title')">
+              <el-form :model="loginForm" :rules="loginRules" ref="loginForm">
+                <el-form-item :label="$t('forms.login.inputName.title')" prop="name">
                   <el-input v-model="loginForm.name" :placeholder="$t('forms.login.inputName.placeholder')" />
                 </el-form-item>
-                <el-form-item :label="$t('forms.login.inputPassword.title')">
+                <el-form-item :label="$t('forms.login.inputPassword.title')" prop="password">
                   <el-input v-model="loginForm.password" :placeholder="$t('forms.login.inputPassword.placeholder')" type="password" />
                 </el-form-item>
-                <el-button type="primary">
+                <el-button type="primary" @click="submitLogin('loginForm')">
                   {{ $t('forms.login.title') }}
                 </el-button>
               </el-form>
             </el-tab-pane>
             <el-tab-pane :label="$t('forms.register.title')" name="register">
-              <el-form :model="registerForm">
-                <el-form-item :label="$t('forms.register.inputName.title')">
+              <el-form :model="registerForm" :rules="registerRules" ref="registerForm">
+                <el-form-item :label="$t('forms.register.inputName.title')" prop="name">
                   <el-input v-model="registerForm.name" :placeholder="$t('forms.register.inputName.placeholder')" />
                 </el-form-item>
-                <el-form-item :label="$t('forms.register.inputEmail.title')">
+                <el-form-item :label="$t('forms.register.inputEmail.title')" prop="email">
                   <el-input v-model="registerForm.email" :placeholder="$t('forms.register.inputEmail.placeholder')" />
                 </el-form-item>
-                <el-form-item :label="$t('forms.register.inputPassword.title')">
+                <el-form-item :label="$t('forms.register.inputPassword.title')" prop="password">
                   <el-input v-model="registerForm.password" :placeholder="$t('forms.register.inputPassword.placeholder')" type="password" />
                 </el-form-item>
-                <el-form-item :label="$t('forms.register.inputConfirmPassword.title')">
-                  <el-input v-model="registerForm.repeatPassword" :placeholder="$t('forms.register.inputConfirmPassword.placeholder')" type="password" />
-                </el-form-item>
-                <el-button type="primary" @click="submitRegister">
+                <el-button type="primary" @click="submitRegister('registerForm')">
                   {{ $t('forms.register.title') }}
                 </el-button>
               </el-form>
@@ -54,8 +41,6 @@
 </template>
 
 <script>
-import { required, minLength, maxLength, email, sameAs } from 'vuelidate/lib/validators'
-
 export default {
   components: {},
   data() {
@@ -67,60 +52,82 @@ export default {
       registerForm: {
         name: null,
         email: null,
-        password: null,
-        repeatPassword: null,
-        success: false,
-        failed: false
+        password: null
       },
-      activeTab: 'login'
+      activeTab: 'login',
+      loginRules: {
+        name: [
+          { required: true, message: 'Поле обязательное', trigger: 'blur' },
+          { min: 3, message: 'Не мении 3-х символов', trigger: 'blur' }
+        ],
+        password: [
+          { required: true, message: 'Поле обязательное', trigger: 'blur' },
+          { min: 6, message: 'Не мении 6-х символов', trigger: 'blur' }
+        ]
+      },
+      registerRules: {
+        name: [
+          { required: true, message: 'Поле обязательное', trigger: 'blur' },
+          { min: 3, message: 'Не мении 3-х символов', trigger: 'blur' }
+        ],
+        email: [
+          { required: true, message: 'Поле обязательное', trigger: 'blur' },
+          { type: 'email', message: 'Введите корректную почту', trigger: 'blur' }
+        ],
+        password: [
+          { required: true, message: 'Поле обязательное', trigger: 'blur' },
+          { min: 6, message: 'Не мении 6-х символов', trigger: 'blur' }
+        ]
+      }
     }
   },
   methods: {
-    submitLogin() {},
-    submitRegister() {
-      const apiPath = 'http://project-the-space-nuxt.web/api/register'
-      this.$axios.$post(apiPath, {
-        name: this.registerForm.name,
-        email: this.registerForm.email,
-        password: this.registerForm.password
-      }).then((res) => {
-        console.log(res)
-        if (res.status === 200 || res.status === 201) {
-          this.registerForm.success = true
+    submitLogin(formName) {
+      console.log(this.$refs)
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          this.$message({
+            showClose: true,
+            message: 'Вход упешный!',
+            type: 'success'
+          })
+        } else {
+          this.$message({
+            showClose: true,
+            message: 'Неверно!',
+            type: 'error'
+          })
+          return false
         }
-      }).catch((e) => {
-        console.error(e)
-        this.registerForm.failed = true
       })
-    }
-  },
-  validations: {
-    loginForm: {
-      name: {
-        required,
-        maxLength: maxLength(40)
-      },
-      password: {
-        required,
-        minLength: minLength(6)
-      }
     },
-    registerForm: {
-      name: {
-        required,
-        maxLength: maxLength(40)
-      },
-      email: {
-        required,
-        email
-      },
-      password: {
-        required,
-        minLength: minLength(6)
-      },
-      repeatPassword: {
-        sameAsPassword: sameAs('password')
-      }
+    submitRegister(formName) {
+      const apiPath = 'http://project-the-space-nuxt.web/api/register'
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          this.$axios.$post(apiPath, {
+            name: this.registerForm.name,
+            email: this.registerForm.email,
+            password: this.registerForm.password
+          }).then((res) => {
+            console.log(res)
+          }).catch((e) => {
+            console.error(e)
+          })
+          this.$message({
+            showClose: true,
+            message: 'Регистрация успешна!',
+            type: 'success'
+          })
+        } else {
+          this.$message({
+            showClose: true,
+            message: 'Что-то пошло не так!',
+            type: 'error'
+          })
+          return false
+        }
+      })
     }
   }
 }
