@@ -78,23 +78,22 @@ export default {
         passwordManager: 'Менеджер паролей'
       }
     },
-    userLabel: {
-      register: 'Зарегистрироваться',
-      login: 'Войти'
-    }
+    login: 'Войти'
   },
   forms: {
     login: {
       title: 'Авторизация',
       inputName: { title: 'Имя', placeholder: 'Введите имя' },
-      inputPassword: { title: 'Пароль', placeholder: 'Введите пароль' }
+      inputPassword: { title: 'Пароль', placeholder: 'Введите пароль' },
+      submit: 'Войти'
     },
     register: {
       title: 'Регистрация',
       inputName: { title: 'Имя', placeholder: 'Введите имя' },
       inputEmail: { title: 'Почта', placeholder: 'Введите почту' },
       inputPassword: { title: 'Пароль', placeholder: 'Введите пароль' },
-      inputConfirmPassword: { title: 'Поворите пароль', placeholder: 'Введите пароль' }
+      inputConfirmPassword: { title: 'Поворите пароль', placeholder: 'Введите пароль' },
+      submit: 'Зарегистрироваться'
     }
   }
 }

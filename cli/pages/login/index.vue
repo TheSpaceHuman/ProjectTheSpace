@@ -5,7 +5,7 @@
         <el-col :span="12">
           <el-tabs v-model="activeTab">
             <el-tab-pane :label="$t('forms.login.title')" name="login">
-              <el-form :model="loginForm" :rules="loginRules" ref="loginForm">
+              <el-form ref="loginForm" :model="loginForm" :rules="loginRules">
                 <el-form-item :label="$t('forms.login.inputName.title')" prop="name">
                   <el-input v-model="loginForm.name" :placeholder="$t('forms.login.inputName.placeholder')" />
                 </el-form-item>
@@ -13,12 +13,12 @@
                   <el-input v-model="loginForm.password" :placeholder="$t('forms.login.inputPassword.placeholder')" type="password" />
                 </el-form-item>
                 <el-button type="primary" @click="submitLogin('loginForm')">
-                  {{ $t('forms.login.title') }}
+                  {{ $t('forms.login.submit') }}
                 </el-button>
               </el-form>
             </el-tab-pane>
             <el-tab-pane :label="$t('forms.register.title')" name="register">
-              <el-form :model="registerForm" :rules="registerRules" ref="registerForm">
+              <el-form ref="registerForm" :model="registerForm" :rules="registerRules">
                 <el-form-item :label="$t('forms.register.inputName.title')" prop="name">
                   <el-input v-model="registerForm.name" :placeholder="$t('forms.register.inputName.placeholder')" />
                 </el-form-item>
@@ -29,7 +29,7 @@
                   <el-input v-model="registerForm.password" :placeholder="$t('forms.register.inputPassword.placeholder')" type="password" />
                 </el-form-item>
                 <el-button type="primary" @click="submitRegister('registerForm')">
-                  {{ $t('forms.register.title') }}
+                  {{ $t('forms.register.submit') }}
                 </el-button>
               </el-form>
             </el-tab-pane>
@@ -88,13 +88,13 @@ export default {
         if (valid) {
           this.$message({
             showClose: true,
-            message: 'Вход упешный!',
+            message: 'Вход упешный успешно',
             type: 'success'
           })
         } else {
           this.$message({
             showClose: true,
-            message: 'Неверно!',
+            message: 'Валидация не корректна',
             type: 'error'
           })
           return false
@@ -102,7 +102,7 @@ export default {
       })
     },
     submitRegister(formName) {
-      const apiPath = 'http://project-the-space-nuxt.web/api/register'
+      const apiPath = this.$store.state.apiPath + 'register'
       this.$refs[formName].validate((valid) => {
         if (valid) {
           this.$axios.$post(apiPath, {
@@ -111,18 +111,22 @@ export default {
             password: this.registerForm.password
           }).then((res) => {
             console.log(res)
+            this.registerForm.name = null
+            this.registerForm.email = null
+            this.registerForm.password = null
+            this.$router.push('/')
+            this.$message({
+              showClose: true,
+              message: 'Регистрация успешна',
+              type: 'success'
+            })
           }).catch((e) => {
             console.error(e)
-          })
-          this.$message({
-            showClose: true,
-            message: 'Регистрация успешна!',
-            type: 'success'
           })
         } else {
           this.$message({
             showClose: true,
-            message: 'Что-то пошло не так!',
+            message: 'Валидация не корректна',
             type: 'error'
           })
           return false

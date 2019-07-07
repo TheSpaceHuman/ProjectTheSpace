@@ -26,9 +26,13 @@
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/utils/mixins.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/utils/reset.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/assets/scss/utils/vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/assets/theme/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/assets/theme/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/assets/theme/index.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Cards/CardsAdvantages.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Figures/SvgSpot.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Figures/SvgTransition.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/components/Forms/CallbackForm.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Navigation/TheAside.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Navigation/TheFooter.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue" afterDir="false" />
@@ -41,6 +45,7 @@
       <change afterPath="$PROJECT_DIR$/cli/layouts/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/layouts/default.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/middleware/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/middleware/authenticated.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/nuxt.config.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/package.json" afterDir="false" />
@@ -63,8 +68,6 @@
       <change afterPath="$PROJECT_DIR$/cli/store/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cli/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,96 +82,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cli/lang/RU.js">
+        <entry file="file://$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="245">
+              <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cli/pages/login/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="120" column="12" lean-forward="true" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cli/store/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/config/cors.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/Auth/RegisterController.php">
+        <entry file="file://$PROJECT_DIR$/cli/assets/scss/modules/header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="73" column="32" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
               <folding>
-                <element signature="n#div#0;n#header#0;n#template#0;n#!!top" />
+                <element signature="e#140#277#0" />
+                <element signature="e#292#332#0" />
               </folding>
             </state>
           </provider>
@@ -180,6 +109,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -204,6 +134,8 @@
       <find>repeatPassword</find>
       <find>registerForm</find>
       <find>loginRules</find>
+      <find>form</find>
+      <find>menuItems</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,33 +157,39 @@
         <option value="$PROJECT_DIR$/cli/assets/scss/utils/fonts.scss" />
         <option value="$PROJECT_DIR$/cli/assets/scss/utils/mixins.scss" />
         <option value="$PROJECT_DIR$/cli/package.json" />
-        <option value="$PROJECT_DIR$/cli/assets/scss/utils/libs.scss" />
-        <option value="$PROJECT_DIR$/cli/assets/scss/utils/reset.scss" />
         <option value="$PROJECT_DIR$/cli/plugins/base-components.js" />
         <option value="$PROJECT_DIR$/cli/components/UI/BaseButton.vue" />
-        <option value="$PROJECT_DIR$/cli/pages/projects/index.vue" />
         <option value="$PROJECT_DIR$/cli/components/Navigation/TheFooter.vue" />
-        <option value="$PROJECT_DIR$/cli/pages/projects/password-manager/index.vue" />
-        <option value="$PROJECT_DIR$/cli/pages/projects/todo-list/index.vue" />
         <option value="$PROJECT_DIR$/cli/components/Figures/SvgSpot.vue" />
         <option value="$PROJECT_DIR$/cli/assets/scss/main.scss" />
         <option value="$PROJECT_DIR$/cli/assets/scss/modules/content.scss" />
         <option value="$PROJECT_DIR$/cli/components/Figures/SvgTransition.vue" />
         <option value="$PROJECT_DIR$/cli/components/UI/CardsAdvantages.vue" />
         <option value="$PROJECT_DIR$/cli/pages/index.vue" />
-        <option value="$PROJECT_DIR$/cli/nuxt.config.js" />
-        <option value="$PROJECT_DIR$/cli/assets/scss/utils/vars.scss" />
-        <option value="$PROJECT_DIR$/api/.env" />
         <option value="$PROJECT_DIR$/api/config/app.php" />
         <option value="$PROJECT_DIR$/cli/pages/blog/index.vue" />
-        <option value="$PROJECT_DIR$/cli/pages/projects/chat/index.vue" />
-        <option value="$PROJECT_DIR$/cli/lang/RU.js" />
-        <option value="$PROJECT_DIR$/cli/store/index.js" />
         <option value="$PROJECT_DIR$/api/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/api/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/api/routes/api.php" />
-        <option value="$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue" />
+        <option value="$PROJECT_DIR$/api/.env" />
+        <option value="$PROJECT_DIR$/cli/components/Forms/CallbackForm.vue" />
+        <option value="$PROJECT_DIR$/cli/assets/scss/utils/reset.scss" />
+        <option value="$PROJECT_DIR$/cli/store/navigations.js" />
+        <option value="$PROJECT_DIR$/cli/store/login.js" />
+        <option value="$PROJECT_DIR$/cli/store/topMenu.js" />
+        <option value="$PROJECT_DIR$/cli/assets/scss/utils/vars.scss" />
+        <option value="$PROJECT_DIR$/cli/assets/scss/utils/libs.scss" />
+        <option value="$PROJECT_DIR$/cli/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/cli/lang/RU.js" />
+        <option value="$PROJECT_DIR$/cli/store/index.js" />
         <option value="$PROJECT_DIR$/cli/pages/login/index.vue" />
+        <option value="$PROJECT_DIR$/cli/pages/projects/chat/index.vue" />
+        <option value="$PROJECT_DIR$/cli/middleware/authenticated.js" />
+        <option value="$PROJECT_DIR$/cli/pages/projects/index.vue" />
+        <option value="$PROJECT_DIR$/cli/pages/projects/password-manager/index.vue" />
+        <option value="$PROJECT_DIR$/cli/pages/projects/todo-list/index.vue" />
+        <option value="$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue" />
+        <option value="$PROJECT_DIR$/cli/assets/scss/modules/header.scss" />
       </list>
     </option>
   </component>
@@ -360,7 +298,7 @@
       <path value="$PROJECT_DIR$/api/vendor/asm89/stack-cors" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-52" />
     <option name="y" value="-18" />
     <option name="width" value="1378" />
@@ -381,60 +319,6 @@
               <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectTheSpace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectTheSpace" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -446,23 +330,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cli/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\assets" />
+      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\static" />
+      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\assets\icons\sprites" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\Cards" />
       <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\Partials" />
       <recent name="C:\Code\GitHub\ProjectTheSpace\cli\assets\icons" />
       <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\Navigation" />
       <recent name="C:\Code\GitHub\ProjectTheSpace\cli\components\Figures" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\static" />
-      <recent name="C:\Code\GitHub\ProjectTheSpace\cli\assets\icons\sprites" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -505,17 +391,23 @@
       <workItem from="1561448205808" duration="124000" />
       <workItem from="1561574829645" duration="2081000" />
       <workItem from="1561578687004" duration="20000" />
+      <workItem from="1561611989190" duration="48000" />
+      <workItem from="1561708375860" duration="51000" />
+      <workItem from="1561730274536" duration="23000" />
+      <workItem from="1562176892566" duration="612000" />
+      <workItem from="1562221202160" duration="609000" />
+      <workItem from="1562452089898" duration="17300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82667000" />
+    <option name="totallyTimeSpent" value="101572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22087745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22087745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -527,7 +419,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5948718" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.45470086" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -540,30 +432,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/var.scss" />
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/animations.scss" />
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/app.scss" />
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/assets/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cli/assets/fonts/Icon Pack Vol. 1/SVG/ALIGN MIDDLE.svg" />
     <entry file="file://$PROJECT_DIR$/cli/assets/fonts/Icon Pack Vol. 1/SVG/ALIGN LEFT.svg" />
     <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/fonts.scss">
@@ -580,27 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/libs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cli/lang/EN.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -611,32 +458,12 @@
     <entry file="file://$PROJECT_DIR$/cli/components/Navigation/TheAside.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/plugins/element-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cli/layouts/default.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding>
             <element signature="e#148#207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/plugins/base-components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -652,34 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/pages/projects/password-manager/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/pages/projects/todo-list/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/pages/projects/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -724,13 +523,6 @@
     <entry file="file://$PROJECT_DIR$/cli/.nuxt/components/nuxt-link.client.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/vars.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cli/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -748,39 +540,8 @@
     <entry file="file://$PROJECT_DIR$/api/config/image.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/pages/projects/chat/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/pages/blog/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/pages/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding>
-            <element signature="n#svg-transition#0;n#main#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/server.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -789,48 +550,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/lang/RU.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="32" />
+        <state relative-caret-position="1768">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -841,6 +564,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -848,20 +578,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue">
+    <entry file="file://$PROJECT_DIR$/api/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="416">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/plugins/element-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding>
-            <element signature="n#div#0;n#header#0;n#template#0;n#!!top" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/icons/assignment_turned.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/components/Forms/CallbackForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/store/topMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="16" column="3" selection-start-line="1" selection-start-column="2" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="e#68#956#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/store/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/libs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="59" column="15" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/plugins/base-components.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/lang/RU.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#39#1418#0" />
+            <element signature="e#1430#1571#0" />
+            <element signature="e#1587#1700#0" />
+            <element signature="e#1723#1872#0" />
+            <element signature="e#1884#1989#0" />
+            <element signature="e#2009#2294#0" />
+            <element signature="e#2119#2270#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/middleware/authenticated.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cli/pages/login/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="120" column="12" lean-forward="true" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+        <state relative-caret-position="-806">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="n#el-form#0;n#el-tab-pane#0;n#el-tabs#0;n#el-col#0;n#el-row#0;n#div#0;n#main#0;n#template#0;n#!!top" />
+            <element signature="e#2936#3487#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/pages/blog/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="17" selection-start-line="17" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="n#svg-transition#0;n#main#0;n#template#0;n#!!top" />
+            <element signature="e#813#867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/pages/projects/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/pages/projects/chat/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/pages/projects/password-manager/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/pages/projects/todo-list/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/scss/utils/vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/components/Navigation/TheHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/assets/scss/modules/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <element signature="e#140#277#0" />
+            <element signature="e#292#332#0" />
+          </folding>
         </state>
       </provider>
     </entry>

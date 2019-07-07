@@ -17,13 +17,15 @@
     "@nuxtjs/pwa": "^2.6.0",
     "animate.css": "^3.7.0",
     "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.7.1",
     "nuxt-i18n": "^5.12.3",
     "nuxt-svg-sprite-module": "^1.0.4",
-    "vuelidate": "^0.7.4"
+    "vuelidate": "^0.7.4",
+    "vuex-i18n": "^1.11.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",

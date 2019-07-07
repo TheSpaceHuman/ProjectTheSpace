@@ -1,0 +1,108 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: $gray-color;
+}
+.header__logo {}
+.header__logo_icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px 20px;
+  display: block;
+  fill: $light-color;
+  &:hover {
+    fill: $primary-color;
+  }
+}
+.header__menu {
+  margin-left: auto;
+  height: 100%;
+}
+.main-header {}
+
+.main-submenu_link {
+  display: block;
+}
+.main-submenu_link.exact-active-link {
+  color: $primary-color;
+}
+.main-submenu_link:hover {
+  color: inherit;
+}
+.main-header_logo {
+  margin-right: auto;
+}
+.main-header_logo:hover .main-header_logo_svg {
+  fill: $primary-color;
+}
+.main-header_logo_svg {
+  fill: $light-color;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.main-menu {
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    &__submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: $gray-color;
+      padding: 25px;
+      flex-direction: column;
+      z-index: 100;
+    }
+  }
+  &__item:hover &__items__submenu {
+    display: flex;
+  }
+  &__item {
+    flex: 0 0 auto;
+    color: #fff;
+    position: relative;
+    .icon {
+      fill: #fff;
+      transition: 0.5s;
+      margin-right: 10px;
+    }
+    &__submenu {
+      flex: 0 0 auto;
+      margin-bottom: 7px;
+    }
+  }
+  &__item:hover {
+    .icon {
+      fill: $primary-color;
+    }
+  }
+  &__link {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 2px solid transparent;
+    &__submenu {
+      padding: 0;
+    }
+  }
+  &__link.active-link {
+    color: $primary-color;
+    border-color: $primary-color;
+    .icon {
+      fill: $primary-color;
+    }
+  }
+}

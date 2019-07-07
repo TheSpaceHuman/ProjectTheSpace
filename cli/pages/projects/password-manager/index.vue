@@ -18,6 +18,7 @@
 import SvgSpot from '@/components/Figures/SvgSpot'
 
 export default {
+  middleware: 'authenticated',
   components: {
     SvgSpot
   }
