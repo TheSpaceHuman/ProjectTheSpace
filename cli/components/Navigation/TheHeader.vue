@@ -20,8 +20,8 @@
             </svg>
             {{ item.title }}
           </nuxt-link>
-          <ul class="main-menu__items__submenu animated flashIn" v-if="item.children">
-            <li class="main-menu__item__submenu" v-for="subItem in item.children" :key="subItem.key">
+          <ul v-if="item.children" class="main-menu__items__submenu animated flashIn">
+            <li v-for="subItem in item.children" :key="subItem.key" class="main-menu__item__submenu">
               <nuxt-link
                 :to="localePath(subItem.link)"
                 class="main-menu__link__submenu"

@@ -94,6 +94,13 @@ export default {
       inputPassword: { title: 'Пароль', placeholder: 'Введите пароль' },
       inputConfirmPassword: { title: 'Поворите пароль', placeholder: 'Введите пароль' },
       submit: 'Зарегистрироваться'
+    },
+    callback: {
+      title: 'Обратная связь',
+      inputName: { title: 'Ваше имя', placeholder: 'Имя' },
+      inputEmail: { title: 'Email', placeholder: 'Email' },
+      inputMessage: { title: 'Сообщение', placeholder: 'Сообщение' },
+      submit: 'Отправить'
     }
   }
 }

@@ -21,6 +21,7 @@
     <div class="container">
       <card-advantages :items="cardItems" />
     </div>
+    <callback-form />
   </main>
 </template>
 
@@ -28,12 +29,14 @@
 import SvgSpot from '@/components/Figures/SvgSpot.vue'
 import SvgTransition from '@/components/Figures/SvgTransition.vue'
 import CardAdvantages from '@/components/Cards/CardsAdvantages.vue'
+import CallbackForm from '@/components/Forms/CallbackForm.vue'
 
 export default {
   components: {
     SvgSpot,
     SvgTransition,
-    CardAdvantages
+    CardAdvantages,
+    CallbackForm
   },
   data() {
     return {

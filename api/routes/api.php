@@ -16,4 +16,5 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::post('/register', 'Auth\RegisterController@apiCreate')->name('api.register');
+Route::post('/register', 'Auth\RegisterController@apiCreate')->name('api.auth.register');
+Route::post('/sendCallback', 'MailController@sendCallback')->name('api.mail.send.callback');

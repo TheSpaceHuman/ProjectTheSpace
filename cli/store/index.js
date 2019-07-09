@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 const store = () => new Vuex.Store({
   state: {
+    csrf: 'b6lgbxPJp7NjQdVRmqzHYH2CYDDGxWxXYPRGk08p',
     authenticated: false,
     counter: 0,
     cardsAdvantages: [

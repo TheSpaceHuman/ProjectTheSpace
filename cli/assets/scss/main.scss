@@ -1,6 +1,7 @@
-@import "utils/libs";
 @import "utils/reset";
 @import "utils/vars";
+@import "utils/libs";
+@import "utils/heplers";
 @import "utils/mixins";
 @import "utils/fonts";
 
@@ -93,7 +94,6 @@ section, .section {
     max-width: $smPhoneWidth;
   }
 }
-
 .icon {
   display: inline-block;
   width: 24px;
